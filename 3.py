@@ -1,44 +1,70 @@
 def parse_string_to_matrix(string):
     string = string.replace('\\n', '\n')
     strlist = string.split('\n')
-    return strlist
+    # Convert each row (string) into a list of characters
+    return [list(row) for row in strlist]
 
-def count_islands(matrix):
-    if not matrix or not matrix[0]:
-        return 0
+# Python Program to find the number of islands
+# using DFS with additional matrix
 
-    rows = len(matrix)
-    cols = len(matrix[0])
-    visited = set()
-    island_count = 0
+# A function to check if a given cell (r, c) 
+# can be included in DFS
+def is_safe(M, r, c, visited):
+    ROW = len(M)
+    COL = len(M[0])
+  
+    # r is in range, c is in range, value is 1 and not 
+    # yet visited
+    return (r >= 0) and (r < ROW) and (c >= 0) and (c < COL) and \
+           (M[r][c] == '1' and not visited[r][c])
 
-    def dfs(row, col):
-        # Check if the cell is already visited or out of bounds or is water ('0')
-        if (row, col) in visited or not (0 <= row < rows and 0 <= col < cols) or matrix[row][col] == '0':
-            return
-        visited.add((row, col))
+def DFS(M, r, c, visited):
+    
+    # These lists are used to get r and c numbers of 8
+    # neighbours of a given cell
+    rNbr = [-1, 0, 0, 1]
+    cNbr = [0, -1, 1, 0]
 
-        # Explore all 4 possible directions (up, down, left, right)
-        directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-        for dr, dc in directions:
-            dfs(row + dr, col + dc)
+    # Mark this cell as visited
+    visited[r][c] = True
 
-    for r in range(rows):
-        for c in range(cols):
-            if matrix[r][c] == '1' and (r, c) not in visited:
-                dfs(r, c)
-                island_count += 1
+    # Recur for all connected neighbours
+    for k in range(4):
+        newR = r + rNbr[k]
+        newC = c + cNbr[k]
+        if is_safe(M, newR, newC, visited):
+            DFS(M, newR, newC, visited)
 
-    return island_count
+def count_islands(M):
+    ROW = len(M)
+    COL = len(M[0])
+  
+    # Make a bool array to mark visited cells.
+    # Initially all cells are unvisited
+    visited = [[False for _ in range(COL)] for _ in range(ROW)]
 
-# Test input
+    # Initialize count as 0 and traverse through
+    # all cells of the given matrix
+    count = 0
+    for r in range(ROW):
+        for c in range(COL):
+          
+            # If a cell with value 1 is not visited yet,
+            # then a new island is found
+            if M[r][c] == '1' and not visited[r][c]:
+               
+                # Visit all cells in this island.
+                DFS(M, r, c, visited)
+                
+                # increment the island count
+                count += 1
+    return count
+
 matrix_string = '1011011\n0110000\n0000100\n1100001\n0110111\n0001101\n0001000'
 matrix = parse_string_to_matrix(matrix_string)
 
-# Print matrix rows for debugging
 for row in matrix:
     print(''.join(row))
 
-# Count and print the number of islands
 res = count_islands(matrix)
 print("Number of islands:", res)
