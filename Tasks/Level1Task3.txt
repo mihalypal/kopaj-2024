@@ -1402,3 +1402,57 @@ How did Eliza feel about the traveler\xe2\x80\x99s words? a) Curious b) Angry c)
 ************* N E W  T A S K *************
 ******************************************
 
+#####################
+		HEADER:
+#####################
+Content-Length: 166
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did Eliza think of the traveler\xe2\x80\x99s words at first? a) She ignored them b) She was intrigued but skeptical c) She was convinced immediately d) She laughed at him
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 102
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+How often did Sky visit Eliza\xe2\x80\x99s garden? a) Once a week b) Every morning c) Occasionally d) Regularly
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 107
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+How did Eliza feel when she saw the small bird on her fence? a) Scared b) Angry c) Delighted d) Indifferent
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+

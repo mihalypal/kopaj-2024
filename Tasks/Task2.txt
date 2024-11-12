@@ -2536,3 +2536,57 @@ The baby slept peacefully in the crib by the window. Where did the baby sleep?
 ************* N E W  T A S K *************
 ******************************************
 
+#####################
+		HEADER:
+#####################
+Content-Length: 95
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+The clock struck midnight as the town remained quiet and still. What time did the clock strike?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 101
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+The butterfly fluttered around the colorful flowers in the garden. What fluttered around the flowers?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 77
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+The puppy chewed on a new toy in the living room. What did the puppy chew on?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+

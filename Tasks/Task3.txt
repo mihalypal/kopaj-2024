@@ -2536,3 +2536,57 @@ Task-Description: https://drive.google.com/file/d/1390gi8vfrL6OxFUaB0TwvRdzGcY3F
 ************* N E W  T A S K *************
 ******************************************
 
+#####################
+		HEADER:
+#####################
+Content-Length: 52
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1390gi8vfrL6OxFUaB0TwvRdzGcY3F5ka/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+7 6\n110000\n001110\n110000\n000011\n011011\n101100\n100011
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 92
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1390gi8vfrL6OxFUaB0TwvRdzGcY3F5ka/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+11 7\n0110100\n1001000\n0101010\n1010010\n1100010\n0101010\n1100101\n1011110\n1111001\n1000011\n0001111
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 81
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1390gi8vfrL6OxFUaB0TwvRdzGcY3F5ka/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+7 10\n1101000000\n1110000101\n0100110000\n1101111111\n0010101001\n1100000100\n0010100110
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
