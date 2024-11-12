@@ -1,5 +1,6 @@
 from flask import Flask, make_response, Response, request
 from astar import a_star_search, ROW, COL
+from ai import ask_ai
 
 import json
 
@@ -14,15 +15,22 @@ def parseHttp(request):
     return header, body
 
 # Ground Floor Tasks
-@app.route('/ground/Task1', methods=['GET', 'POST'])
+@app.route('/ground/task1', methods=['GET', 'POST'])
 def Task1():
+    header, body = parseHttp(request)
 
-    # response = make_response("Hello World!", 200)
-    # return response
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Task1.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write(
+            "\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
-    return Response("OK", status=200)
+    return Response("OK", status=200, mimetype='application/json')
 
-@app.route('/ground/Task2', methods=['GET', 'POST'])
+@app.route('/ground/task2', methods=['GET', 'POST'])
 def Task2():
     header, body = parseHttp(request)
 
@@ -37,11 +45,9 @@ def Task2():
     return Response("OK", status=200)
 
 
-@app.route('/ground/Task3', methods=['GET', 'POST'])
+@app.route('/ground/task3', methods=['GET', 'POST'])
 def Task3():
-    header = request.headers
-    body = str(request.get_data())
-    body = body[2:-1:]
+    header, body = parseHttp(request)
     # Task write into file with every possible input because of the append mode
     with open("Tasks/Task3.txt", "a") as f:
         f.write("#####################\n\t\tHEADER:\n#####################\n")
@@ -53,7 +59,7 @@ def Task3():
     return Response("OK", status=200)
 
 
-@app.route('/ground/Task4', methods=['GET', 'POST'])
+@app.route('/ground/task4', methods=['GET', 'POST'])
 def Task4():
     header, body = parseHttp(request)
     # Task write into file with every possible input because of the append mode
@@ -66,12 +72,25 @@ def Task4():
 
     return Response("OK", status=200)
 
-@app.route('/ground/Bossasd', methods=['GET', 'POST'])
-def Task4():
+
+
+
+
+
+
+
+
+
+
+
+
+
+@app.route('/ground/task5', methods=['GET', 'POST'])
+def Task5():
     header, body = parseHttp(request)
 
     # Task write into file with every possible input because of the append mode
-    with open("Tasks/Bossasd.txt", "a") as f:
+    with open("Tasks/Boss.txt", "a") as f:
         f.write("#####################\n\t\tHEADER:\n#####################\n")
         f.write(str(header))
         f.write("#####################\n\t\tBODY:\n#####################\n")
