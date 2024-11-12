@@ -124,3 +124,363 @@ Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5
 ************* N E W  T A S K *************
 ******************************************
 
+#####################
+		HEADER:
+#####################
+Content-Length: 179
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Green, Blue, Orange, Blue]\n[0, 2]\n[Red, Red, Green, Orange]\n[0, 2]\n[Blue, Green, Red, Green]\n[1, 0]\n[Yellow, Orange, Yellow, Green]\n[1, 2]\n[Orange, Green, Yellow, Purple]\n[1, 3]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 104
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Orange, Orange, Blue, Yellow]\n[0, 1]\n[Red, Red, Red, Blue]\n[0, 0]\n[Green, Green, Green, Orange]\n[2, 2]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 167
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Yellow, Red, Green, Purple]\n[2, 0]\n[Red, Red, Red, Purple]\n[2, 0]\n[Red, Red, Green, Green]\n[1, 0]\n[Blue, Red, Blue, Purple]\n[3, 0]\n[Blue, Red, Orange, Purple]\n[2, 2]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 167
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Orange, Red, Purple, Orange]\n[1, 0]\n[Red, Red, Red, Red]\n[1, 0]\n[Green, Red, Green, Green]\n[1, 0]\n[Blue, Red, Blue, Yellow]\n[3, 0]\n[Blue, Red, Yellow, Yellow]\n[2, 0]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 184
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Orange, Yellow, Green, Purple]\n[1, 1]\n[Red, Red, Green, Yellow]\n[0, 1]\n[Green, Green, Blue, Purple]\n[0, 2]\n[Yellow, Yellow, Purple, Blue]\n[3, 0]\n[Purple, Yellow, Purple, Blue]\n[3, 0]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 140
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Green, Blue, Orange, Blue]\n[1, 2]\n[Red, Green, Blue, Blue]\n[0, 2]\n[Blue, Blue, Yellow, Orange]\n[2, 0]\n[Purple, Blue, Green, Orange]\n[3, 0]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 146
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Yellow, Green, Orange, Orange]\n[0, 2]\n[Red, Red, Green, Yellow]\n[0, 0]\n[Orange, Orange, Blue, Blue]\n[3, 0]\n[Orange, Orange, Purple, Blue]\n[2, 2]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 136
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Orange, Red, Purple, Blue]\n[1, 2]\n[Red, Red, Blue, Orange]\n[2, 0]\n[Red, Green, Purple, Orange]\n[0, 2]\n[Blue, Red, Blue, Purple]\n[2, 1]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 108
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Purple, Blue, Yellow, Purple]\n[1, 1]\n[Red, Red, Blue, Purple]\n[1, 0]\n[Green, Green, Purple, Purple]\n[1, 2]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 179
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Yellow, Red, Purple, Purple]\n[2, 1]\n[Red, Red, Yellow, Purple]\n[0, 3]\n[Yellow, Green, Purple, Red]\n[3, 0]\n[Yellow, Blue, Purple, Red]\n[3, 0]\n[Yellow, Orange, Purple, Red]\n[3, 0]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 176
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Red, Yellow, Yellow, Purple]\n[1, 0]\n[Red, Red, Red, Red]\n[0, 0]\n[Green, Green, Green, Purple]\n[3, 0]\n[Green, Green, Blue, Purple]\n[2, 1]\n[Green, Orange, Green, Purple]\n[2, 2]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 137
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Yellow, Yellow, Orange, Red]\n[1, 0]\n[Red, Red, Red, Red]\n[0, 0]\n[Green, Green, Orange, Green]\n[1, 0]\n[Green, Yellow, Blue, Blue]\n[2, 0]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 161
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Purple, Green, Orange, Orange]\n[0, 0]\n[Red, Red, Red, Red]\n[2, 0]\n[Red, Red, Blue, Blue]\n[1, 2]\n[Red, Blue, Red, Yellow]\n[2, 2]\n[Red, Blue, Yellow, Red]\n[0, 4]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 137
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Red, Green, Orange, Purple]\n[1, 1]\n[Red, Red, Red, Green]\n[1, 0]\n[Red, Blue, Blue, Orange]\n[0, 1]\n[Green, Yellow, Orange, Green]\n[1, 3]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 188
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Orange, Purple, Purple, Green]\n[1, 2]\n[Red, Green, Purple, Orange]\n[1, 2]\n[Red, Purple, Green, Purple]\n[2, 0]\n[Green, Purple, Green, Orange]\n[3, 0]\n[Yellow, Purple, Green, Orange]\n[3, 0]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 211
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Green, Yellow, Orange, Green]\n[0, 2]\n[Red, Red, Green, Yellow]\n[2, 0]\n[Red, Green, Green, Blue]\n[1, 1]\n[Red, Orange, Blue, Yellow]\n[1, 1]\n[Blue, Blue, Green, Yellow]\n[3, 0]\n[Blue, Purple, Green, Yellow]\n[2, 2]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 178
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Green, Purple, Yellow, Yellow]\n[2, 0]\n[Red, Red, Yellow, Yellow]\n[0, 1]\n[Green, Purple, Red, Green]\n[3, 0]\n[Green, Purple, Red, Blue]\n[3, 0]\n[Green, Purple, Red, Purple]\n[3, 0]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 148
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Orange, Purple, Orange, Green]\n[0, 2]\n[Red, Red, Green, Orange]\n[0, 1]\n[Green, Green, Blue, Purple]\n[0, 1]\n[Yellow, Orange, Purple, Yellow]\n[3, 0]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 145
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Orange, Purple, Green, Yellow]\n[2, 0]\n[Red, Red, Green, Yellow]\n[1, 0]\n[Green, Purple, Green, Green]\n[1, 0]\n[Blue, Purple, Blue, Yellow]\n[0, 0]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 147
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1xOHCLUXyurhH5k9mM7vtP8WRe3Wx5HDI/view
+
+#####################
+		BODY:
+#####################
+[Blue, Yellow, Orange, Purple]\n[1, 2]\n[Red, Blue, Yellow, Purple]\n[0, 2]\n[Green, Yellow, Blue, Orange]\n[0, 4]\n[Yellow, Green, Orange, Blue]\n[0, 4]\n
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+

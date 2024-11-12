@@ -41,6 +41,25 @@ def validate_credit_card(card_number):
     })
 
 
+def max_profit(prices):
+    prices = prices[1:-1]
+    prices = prices.split(', ')
+    min_price = float('inf')
+    max_profit = 0
+    buy_day = 0
+    sell_day = 0
+
+    for i in range(len(prices)):
+        if prices[i] < min_price:
+            min_price = prices[i]
+            buy_day = i
+        current_profit = prices[i] - min_price
+        if current_profit > max_profit:
+            max_profit = current_profit
+            sell_day = i
+
+    return (buy_day, sell_day)
+
 def findPlatform(arr, dep, passengers, n):
     plat_needed = 1
     result = 1
@@ -297,7 +316,7 @@ def Level1Bonus():
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
-    return "possible.to"
+    return "cutting.edge"
 
 @app.route('/level2/task1', methods=['GET', 'POST'])
 def Level2Task1():
@@ -323,10 +342,10 @@ def Level2Task2():
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
+    print(body)
     var1 = [x[0] for x in body]
     var2 = [x[1] for x in body]
     passengers = [x[2] for x in body]
-    print(body)
 
     needed_platforms, max_passengers = findPlatform(var1, var2, passengers, len(var1))
 
@@ -373,7 +392,7 @@ def Level3Task1():
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
-    return str(ask_ai(str(body)))
+    return max_profit(body)
 
 @app.route('/level3/task2', methods=['GET', 'POST'])
 def Level3Task2():
