@@ -1,7 +1,17 @@
 from flask import Flask, make_response, Response, request
 from astar import a_star_search, ROW, COL
 
+import json
+
+
 app = Flask(__name__)
+
+def parseHttp(request):
+    header = request.headers
+    body = str(request.get_data())
+    body = body[2:-1:]
+
+    return header, body
 
 @app.route('/ground/Task1', methods=['GET', 'POST'])
 def Task1():
@@ -13,9 +23,7 @@ def Task1():
 
 @app.route('/ground/Task2', methods=['GET', 'POST'])
 def Task2():
-    header = request.headers
-    body = str(request.get_data())
-    body = body[2:-1:]
+    header, body = parseHttp(request)
 
     # Task write into file with every possible input because of the append mode
     with open("Tasks/Task2.txt", "a") as f:
@@ -46,9 +54,7 @@ def Task3():
 
 @app.route('/ground/Task4', methods=['GET', 'POST'])
 def Task4():
-    header = request.headers
-    body = str(request.get_data())
-    body = body[2:-1:]
+    header, body = parseHttp(request)
 
     # Task write into file with every possible input because of the append mode
     with open("Tasks/Task4.txt", "a") as f:
