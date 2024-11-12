@@ -4,7 +4,8 @@ L = False
 F = False
 R = False
 
-input_string = '|*|-|\n|*|*|\n|-|-|\n|<|^>|\n'
+input_string = '|*|*|-|-|\n|*|-|-|*|\n|-|-|*|-|\n|<^>|<^>|<^|<|\n'
+input_string = input_string.replace('\\n', '\n')
 
 rows = input_string.strip().split('\n')
 result = []
@@ -15,7 +16,7 @@ for row in rows:
 transposed_result = list(zip(*result))
 transposed_result = [list(row) for row in transposed_result]
 for column in transposed_result:
-    if column[2] == '*':
+    if (column[2] == '*' and column[0] == '-' and column[1] == '-') or (column[0] == '*' and column[1] == '*'):
         if '<' in column[3]:
             L = True
         if '>' in column[3]:

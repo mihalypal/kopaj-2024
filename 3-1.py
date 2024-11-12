@@ -1,4 +1,10 @@
+
+
 def max_profit(prices):
+    prices = prices[1:-1]
+    prices = prices.split(', ')
+    prices = [int(x) for x in prices]
+    print(prices)
     min_price = float('inf')
     max_profit = 0
     buy_day = 0
@@ -16,5 +22,6 @@ def max_profit(prices):
     return (buy_day, sell_day)
 
 # Example usage:
-prices = 0 # body
+prices = '[1236, 333, 913, 1335, 149, 1769, 1939, 1290, 789, 358]'
 res = max_profit(prices)
+print(res)
