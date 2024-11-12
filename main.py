@@ -33,7 +33,6 @@ def Task3():
     header = request.headers
     body = str(request.get_data())
     body = body[2:-1:]
-
     # Task write into file with every possible input because of the append mode
     with open("Tasks/Task3.txt", "a") as f:
         f.write("#####################\n\t\tHEADER:\n#####################\n")
@@ -103,10 +102,9 @@ def Task4():
     #     print(i)
     result = ""
     for i in grid:
-        result = result[:] + i + "\n"
-        print(i)
+        result += i + "\n"
 
-    return Response(result, status=200)
+    return Response(result, status=200, mimetype='text/plain')
 
 
 if __name__ == '__main__':
