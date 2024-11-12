@@ -103,10 +103,10 @@ def Task3():
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
-    print(body)
+    # print(body)
     first_n_pos = body.find('n')
     body = body[first_n_pos + 1:]
-    print(body)
+    # print(body)
     res = count_islands(parse_string_to_matrix(str(body)))
     res2 = ask_ai("How many islands in this matrix?" + str(body) + "\n" + "Answer it with one number! Write Just the number! Nothing else!")
 
@@ -156,7 +156,9 @@ def Level1Task2():
     F = False
     R = False
 
-    input_string = body
+    input_string = str(body)
+    print(input_string)
+    input_string = input_string.replace('\\n', '\n')
 
     rows = input_string.strip().split('\n')
     result = []
@@ -174,7 +176,7 @@ def Level1Task2():
                 R = True
             if '^' in column[3]:
                 F = True
-    #    print(column)
+        print(column)
     res = ''
     if L:
         res += 'L'

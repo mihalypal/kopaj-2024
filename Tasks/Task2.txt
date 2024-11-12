@@ -2410,3 +2410,129 @@ The puppy chewed on a new toy in the living room. What did the puppy chew on?
 ************* N E W  T A S K *************
 ******************************************
 
+#####################
+		HEADER:
+#####################
+Content-Length: 71
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+The sun rose slowly over the calm blue ocean. What color was the ocean?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 85
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+The children played soccer in the large green field. What game did the children play?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 78
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+A spider spun a large web in the corner of the room. What did the spider spin?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 95
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+The artist painted a beautiful landscape of the mountains at sunset. What did the artist paint?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 79
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+The snow covered the ground in a thick, white blanket. What covered the ground?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 75
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+Lucy planted a row of tomatoes in her backyard garden. What did Lucy plant?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 78
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+The baby slept peacefully in the crib by the window. Where did the baby sleep?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
