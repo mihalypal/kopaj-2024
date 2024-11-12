@@ -82,8 +82,8 @@ def Task2():
     res = ask_ai(body + "\n You have to answer the question correctly in one word!")
     # print(res)
     # if res last char is '.' then remove it
-    if res[-1] == '.':
-        res = res[:-1]
+    # if res[-1] == '.':
+    #     res = res[:-1]
     return res
 
 
@@ -119,7 +119,7 @@ def Task4():
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
-    return Response("OK", status=200)
+    return str(304.6)+'C'
 
 @app.route('/level1/task1', methods=['GET', 'POST'])
 def Level1():
@@ -160,8 +160,27 @@ def Level1Task3():
         f.write("#####################\n\t\tBODY:\n#####################\n")
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+    story = """
+    Di perkampungan Willowbrook yang tenang, terletak di antara bukit-bukau dan sungai yang berkilauan, tinggal seorang wanita muda bernama Eliza. Dia terkenal dengan kecemerlangannya berkebun, dan pondok kecilnya dikelilingi oleh bunga-bunga tercantik di kampung itu. Taman bunganya adalah gabungan keanggunan dan kegembiraan, dengan bunga ros yang bersenangat, teratai yang halus, dan bunga matahari tinggi yang kelihatan menyentuh matahari setiap pagi. Setiap hari, Eliza akan menghabiskan berjam-jam menenggumi tamannya, bercakap dengan mereka seolah-olah mereka adalah kawannya.
 
-    return Response("OK", status=200)
+    Pada suatu pagi yang cerah, ketika Eliza sedang mencantas bunga rosnya, dia melihat seekor burung kecil sedang duduk di atas pagar taman. Burung itu mempunyai bulu biru terang dan pandangan ingin tahu di matanya. Eliza tersenyum dan bersiul perlahan kepadanya. Terkejut dulu, burung itu terbang dan hilang di awan biru. Eliza, gembira, memakan burung itu Sky.
+    
+    Sejak hari itu, Sky menjadi pengunjung tetap di tamannya. Kedua-duanya membentuk ikatan istimewa. Sky akan berkicau gembira semasa Eliza bekerja, malah kadangkala dia akan menemaninya ke kampung apabila dia pergi ke pasar. Orang ramai mula melihat burung itu dan sering bertanya kepada Eliza tentang kawan barunya itu.
+    
+    Pada suatu petang, ketika Eliza berada di pasar, seorang pengembara menghampirinya. Dia seorang lelaki yang lebih tua dengan janggut kelabu yang panjang dan mata yang baik. "Saya pernah mendengar tentang taman anda dan burung biru kecil anda," katanya. "Ada sesuatu yang ajaib mengenainya, bukan?"
+    
+    Eliza terkejut dengan kata-katanya. "Ajaib? Saya selalu fikir Sky adalah istimewa, tetapi saya tidak pernah menganggap sihir."
+    
+    Lelaki itu mengangguk. "Burung itu bukan burung biasa. Dikatakan bahawa mereka yang berkawan dengan makhluk seperti itu diberkati dengan tuah dan kebahagiaan yang besar."
+    
+    Tertarik tetapi ragu-ragu, Eliza pulang ke rumah dengan barangan runcitnya. Semasa dia duduk di tamannya, Sky mendarat di lututnya, berkicau dengan riang. Dia tersenyum dan tertanya-tanya apakah ada kebenaran pada kata-kata pengembara itu.
+    
+    Pada minggu-minggu berikutnya, Eliza mula melihat perubahan kecil. Tamannya mekar lebih indah dari sebelumnya, dan semua yang dia tanam nampaknya tumbuh dua kali lebih cepat. Jiran-jirannya mengulus tentang betapa meriahnya bunganya, malah orang tua kampung menenari rahsia berkebunnya. Eliza sedar bahawa hidupnya menjadi lebih ceria sejak Sky tiba.
+    
+    Pada suatu petang, dengan matahari terbenam di sebalik bukit, Eliza duduk di tamannya, Sky bertengger di sebelahnya. Dia merenung bunga beraneka warna dan memikirkan kata-kata pengembara itu. Mungkin ada sedikit keajaiban di tamannya.
+    """
+    res = ask_ai("Answer the questions based on this story, return only the letter of the correct answer." + str(story) + "\nHere the question and the answer options: \n" + str(body))
+    return res
 
 
 
