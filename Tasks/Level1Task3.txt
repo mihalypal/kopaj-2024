@@ -1006,3 +1006,273 @@ How did Eliza feel when she saw the small bird on her fence? a) Scared b) Angry 
 ************* N E W  T A S K *************
 ******************************************
 
+#####################
+		HEADER:
+#####################
+Content-Length: 105
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did Sky do while Eliza worked in the garden? a) Flew away b) Sat quietly c) Chirped happily d) Slept
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 101
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did people ask Eliza about? a) Her garden b) Her new friend, the bird c) Her house d) Her family
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 140
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+How did the village respond to Sky? a) They ignored it b) They found it strange c) They asked Eliza about the bird d) They were afraid of it
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 103
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did the traveler say Sky brought to people? a) Wealth b) Luck and happiness c) Adventure d) Wisdom
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 110
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did the traveler have? a) A long gray beard b) A walking stick c) A basket of fruits d) A small blue bird
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 90
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+How did Eliza feel about the traveler\xe2\x80\x99s words? a) Curious b) Angry c) Confused d) Afraid
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 148
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What was the bird\xe2\x80\x99s special ability? a) It could sing beautifully b) It brought luck and happiness c) It could speak d) It was invisible to others
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 118
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+Where did Sky often perch when Eliza was in the garden? a) On the fence b) On the roof c) On her shoulder d) On a tree
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 91
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What kind of look did Sky have when Eliza first saw it? a) Sad b) Curious c) Angry d) Tired
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 109
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did the village elder ask Eliza about? a) Her family b) Her gardening secrets c) Her bird d) Her travels
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 118
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+Where did Sky often perch when Eliza was in the garden? a) On the fence b) On the roof c) On her shoulder d) On a tree
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 134
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did Eliza often do while working in the garden? a) Talked to her plants b) Listened to music c) Called her friends d) Read a book
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 118
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did the traveler say people who befriended such birds receive? a) Wealth b) Adventure c) Great luck d) Protection
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 91
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What kind of look did Sky have when Eliza first saw it? a) Sad b) Curious c) Angry d) Tired
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 107
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+How did Eliza feel when she saw the small bird on her fence? a) Scared b) Angry c) Delighted d) Indifferent
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+

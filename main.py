@@ -7,6 +7,11 @@ import json
 
 app = Flask(__name__)
 
+def smallest_hole(input_string):
+    dimensions = list(map(int, input_string.split(',')))
+    sorted_dimensions = sorted(dimensions)
+    return f"{sorted_dimensions[0]},{sorted_dimensions[1]}"
+
 
 def parse_string_to_matrix(string):
     string = string.replace('\\n', '\n')
@@ -134,8 +139,7 @@ def Level1():
 
     # question from header -> Task-Description:
 
-    question = header.get("Task-Description")
-    return str(ask_ai(str(question) + "\nHere is the input: " + str(body)))
+    return smallest_hole(body)
 
 @app.route('/level1/task2', methods=['GET', 'POST'])
 def Level1Task2():
@@ -148,7 +152,41 @@ def Level1Task2():
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
-    return Response("OK", status=200)
+    L = False
+    F = False
+    R = False
+
+    input_string = body
+
+    rows = input_string.strip().split('\n')
+    result = []
+
+    for row in rows:
+        columns = row.strip('|').split('|')
+        result.append(columns)
+    transposed_result = list(zip(*result))
+    transposed_result = [list(row) for row in transposed_result]
+    for column in transposed_result:
+        if column[2] == '*':
+            if '<' in column[3]:
+                L = True
+            if '>' in column[3]:
+                R = True
+            if '^' in column[3]:
+                F = True
+    #    print(column)
+    res = ''
+    if L:
+        res += 'L'
+    if F:
+        res += 'F'
+    if R:
+        res += 'R'
+
+    if not L and not F and not R:
+        res = 'STOP'
+
+    return res
 
 @app.route('/level1/task3', methods=['GET', 'POST'])
 def Level1Task3():
