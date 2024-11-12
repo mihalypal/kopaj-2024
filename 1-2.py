@@ -4,7 +4,7 @@ L = False
 F = False
 R = False
 
-input_string = '|*|*|\n|-|*|\n|-|-|\n|>|<^>|\n'
+input_string = '|*|-|\n|*|*|\n|-|-|\n|<|^>|\n'
 
 rows = input_string.strip().split('\n')
 result = []
