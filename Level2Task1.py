@@ -36,6 +36,5 @@ def validate_credit_card(card_number):
         "doubleDigitNumbers": sorted(list(two_digit_numbers))
     })
 
-# Test the function with a sample input
 credit_card_number = "1234567812345670"
-print(validate_credit_card(credit_card_number))
+validate_credit_card(credit_card_number)
