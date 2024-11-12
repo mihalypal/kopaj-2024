@@ -1,4 +1,5 @@
 def parse_string_to_matrix(string):
+    string = string.replace('\\n', '\n')
     matrix = [list(map(int, row.split())) for row in string.strip().split('\n')]
     return matrix
 
@@ -28,4 +29,5 @@ def count_islands(matrix):
 
     return island_count
 
-res = count_islands(parse_string_to_matrix(body))
+res = count_islands(parse_string_to_matrix('01001101\n11110001\n10101001\n00001110\n00100111\n10011110'))
+print(res)
