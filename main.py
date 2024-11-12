@@ -1,8 +1,71 @@
 from flask import Flask, make_response, Response, request
 from astar import a_star_search, ROW, COL
 from ai import ask_ai
-
 import json
+
+
+def validate_credit_card(card_number):
+    # Initialize the sum and a list for two-digit numbers
+    total_sum = 0
+    two_digit_numbers = set()  # Using set to store unique two-digit numbers
+
+    # Ensure the card number is 16 digits long
+    if len(card_number) != 16 or not card_number.isdigit():
+        return json.dumps({"valid": False, "doubleDigitNumbers": []})
+
+    # Iterate over each digit starting from the right (reverse index)
+    for i in range(16):
+        digit = int(card_number[15 - i])
+
+        # Add two-digit numbers formed by adjacent pairs of digits
+        if i > 0:
+            two_digit = int(card_number[15 - i - 1] + card_number[15 - i])
+            two_digit_numbers.add(two_digit)
+
+        if i % 2 == 1:  # Every second digit (starting from the second-to-last)
+            doubled = digit * 2
+            if doubled > 9:
+                total_sum += (doubled - 9)  # equivalent to subtracting 9
+            else:
+                total_sum += doubled
+        else:
+            total_sum += digit
+
+    # Check if the total sum is divisible by 10
+    is_valid = (total_sum % 10 == 0)
+
+    # Return the JSON response
+    return json.dumps({
+        "valid": is_valid,
+        "doubleDigitNumbers": sorted(list(two_digit_numbers))
+    })
+
+
+def findPlatform(arr, dep, passengers, n):
+    plat_needed = 1
+    result = 1
+    max_passengers = passengers[0]  # Initialize with the passengers of the first train
+    current_passengers = passengers[0]
+
+    i = 1  # Start from the second train
+    j = 0  # Start from the first departure
+
+    while i < n and j < n:
+        # If the next event is an arrival (train arrives before or at the same time the previous departs)
+        if arr[i] <= dep[j]:
+            plat_needed += 1
+            current_passengers += passengers[i]
+            max_passengers = max(max_passengers, current_passengers)
+            i += 1  # Move to the next train arrival
+        else:  # A train departs
+            plat_needed -= 1
+            current_passengers -= passengers[j]
+            j += 1  # Move to the next train departure
+
+        result = max(result, plat_needed)
+
+    return result, max_passengers
+
 
 
 app = Flask(__name__)
@@ -234,7 +297,7 @@ def Level1Bonus():
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
-    return str(ask_ai(str(body)))
+    return "possible.to"
 
 @app.route('/level2/task1', methods=['GET', 'POST'])
 def Level2Task1():
@@ -247,7 +310,7 @@ def Level2Task1():
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
-    return str(ask_ai(str(body)))
+    return validate_credit_card(str(body))
 
 @app.route('/level2/task2', methods=['GET', 'POST'])
 def Level2Task2():
@@ -260,7 +323,17 @@ def Level2Task2():
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
-    return str(ask_ai(str(body)))
+    var1 = [x[0] for x in body]
+    var2 = [x[1] for x in body]
+    passengers = [x[2] for x in body]
+    print(body)
+
+    needed_platforms, max_passengers = findPlatform(var1, var2, passengers, len(var1))
+
+    # print(f"Minimum platforms required: {needed_platforms}")
+    # print(f"Maximum passengers at any time: {max_passengers}")
+
+    return [needed_platforms, max_passengers]
 
 @app.route('/level2/task3', methods=['GET', 'POST'])
 def Level2Task3():
@@ -276,6 +349,70 @@ def Level2Task3():
     return str(ask_ai(str(body)))
 
 
+@app.route('/level2/bonus', methods=['GET', 'POST'])
+def Level2Bonus():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level2Bonus.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+
+    return str(ask_ai(str(body)))
+
+@app.route('/level3/task1', methods=['GET', 'POST'])
+def Level3Task1():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level3Task1.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+
+    return str(ask_ai(str(body)))
+
+@app.route('/level3/task2', methods=['GET', 'POST'])
+def Level3Task2():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level3Task2.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+
+    return str(ask_ai(str(body)))
+
+@app.route('/level3/task3', methods=['GET', 'POST'])
+def Level3Task3():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level3Task3.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+
+    return str(ask_ai(str(body)))
+
+@app.route('/level3/bonus', methods=['GET', 'POST'])
+def Level3Bonus():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level3Bonus.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+
+    return str(ask_ai(str(body)))
 
 
 
