@@ -7,6 +7,43 @@ import json
 
 app = Flask(__name__)
 
+
+def parse_string_to_matrix(string):
+    string = string.replace('\\n', '\n')
+    matrix = [list(map(int, row.split())) for row in string.strip().split('\n')]
+    return matrix
+
+
+def count_islands(matrix):
+    if not matrix or not matrix[0]:
+        return 0
+
+    rows = len(matrix)
+    cols = len(matrix[0])
+    visited = set()
+    island_count = 0
+
+    def dfs(row, col):
+        # Check if the cell is already visited or out of bounds or is water ('0')
+        if (row, col) in visited or not (0 <= row < rows and 0 <= col < cols) or matrix[row][col] == '0':
+            return
+        visited.add((row, col))
+
+        # Explore all 4 possible directions (up, down, left, right)
+        directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+        for dr, dc in directions:
+            dfs(row + dr, col + dc)
+
+    # Traverse each cell in the matrix
+    for r in range(rows):
+        for c in range(cols):
+            if matrix[r][c] == '1' and (r, c) not in visited:
+                # Found an unvisited land cell, start a DFS from here
+                dfs(r, c)
+                island_count += 1
+
+    return island_count
+
 def parseHttp(request):
     header = request.headers
     body = str(request.get_data())
@@ -33,6 +70,7 @@ def Task1():
 @app.route('/ground/task2', methods=['GET', 'POST'])
 def Task2():
     header, body = parseHttp(request)
+    # print(body)
 
     # Task write into file with every possible input because of the append mode
     with open("Tasks/Task2.txt", "a") as f:
@@ -41,8 +79,12 @@ def Task2():
         f.write("#####################\n\t\tBODY:\n#####################\n")
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
-
-    return Response("OK", status=200)
+    res = ask_ai(body + "\n You have to answer the question correctly in one word!")
+    # print(res)
+    # if res last char is '.' then remove it
+    if res[-1] == '.':
+        res = res[:-1]
+    return res
 
 
 @app.route('/ground/task3', methods=['GET', 'POST'])
@@ -56,14 +98,21 @@ def Task3():
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
-    return Response("OK", status=200)
+    print(body)
+    first_n_pos = body.find('n')
+    body = body[first_n_pos + 1:]
+    print(body)
+    res = count_islands(parse_string_to_matrix(str(body)))
+    res2 = ask_ai("How many islands in this matrix?" + str(body) + "\n" + "Answer it with one number! Write Just the number! Nothing else!")
+
+    return res2
 
 
-@app.route('/ground/task4', methods=['GET', 'POST'])
+@app.route('/ground/bonus', methods=['GET', 'POST'])
 def Task4():
     header, body = parseHttp(request)
     # Task write into file with every possible input because of the append mode
-    with open("Tasks/Task4.txt", "a") as f:
+    with open("Tasks/ground_bonus.txt", "a") as f:
         f.write("#####################\n\t\tHEADER:\n#####################\n")
         f.write(str(header))
         f.write("#####################\n\t\tBODY:\n#####################\n")
@@ -72,8 +121,47 @@ def Task4():
 
     return Response("OK", status=200)
 
+@app.route('/level1/task1', methods=['GET', 'POST'])
+def Level1():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level1Task1.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
+    # question from header -> Task-Description:
 
+    question = header.get("Task-Description")
+    return str(ask_ai(str(question) + "\nHere is the input: " + str(body)))
+
+@app.route('/level1/task2', methods=['GET', 'POST'])
+def Level1Task2():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level1Task2.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+
+    return Response("OK", status=200)
+
+@app.route('/level1/task3', methods=['GET', 'POST'])
+def Level1Task3():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level1Task3.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+
+    return Response("OK", status=200)
 
 
 
@@ -148,3 +236,4 @@ def Task5():
 
 if __name__ == '__main__':
     app.run(port=1234, host='0.0.0.0')
+
