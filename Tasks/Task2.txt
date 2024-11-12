@@ -1,0 +1,36 @@
+#####################
+		HEADER:
+#####################
+Content-Length: 86
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+The windmill turned slowly in the soft breeze by the river. What turned in the breeze?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 95
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: In this challenge, you have to answer a question based on the received text. The text will be a random sentence with a question at the end. For example: 'The quick brown fox jumps over the lazy dog. What is the color of the fox?'. You have to answer the question correctly in one word to get the point.
+
+#####################
+		BODY:
+#####################
+The artist used a variety of colors to paint a sunset on the canvas. What did the artist paint?
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+

@@ -1,0 +1,36 @@
+#####################
+		HEADER:
+#####################
+Content-Length: 57
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1390gi8vfrL6OxFUaB0TwvRdzGcY3F5ka/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+6 8\n01001101\n11110001\n10101001\n00001110\n00100111\n10011110
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 93
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1390gi8vfrL6OxFUaB0TwvRdzGcY3F5ka/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+9 9\n000110101\n010110011\n010001110\n110011100\n010100000\n000111001\n001001101\n111101110\n101011101
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
