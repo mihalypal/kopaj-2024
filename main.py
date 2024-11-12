@@ -13,6 +13,7 @@ def parseHttp(request):
 
     return header, body
 
+# Ground Floor Tasks
 @app.route('/ground/Task1', methods=['GET', 'POST'])
 def Task1():
 
@@ -55,9 +56,22 @@ def Task3():
 @app.route('/ground/Task4', methods=['GET', 'POST'])
 def Task4():
     header, body = parseHttp(request)
-
     # Task write into file with every possible input because of the append mode
     with open("Tasks/Task4.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+
+    return Response("OK", status=200)
+
+@app.route('/ground/Bossasd', methods=['GET', 'POST'])
+def Task4():
+    header, body = parseHttp(request)
+
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Bossasd.txt", "a") as f:
         f.write("#####################\n\t\tHEADER:\n#####################\n")
         f.write(str(header))
         f.write("#####################\n\t\tBODY:\n#####################\n")
