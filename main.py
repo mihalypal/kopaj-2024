@@ -1,7 +1,68 @@
+import ast
+
 from flask import Flask, make_response, Response, request
 from astar import a_star_search, ROW, COL
 from ai import ask_ai
 import json
+
+from collections import Counter
+
+
+def get_feedback(guess, secret):
+    correct_pos = sum(g == s for g, s in zip(guess, secret))
+    guess_counter = Counter(guess)
+    secret_counter = Counter(secret)
+    correct_colors = sum((guess_counter & secret_counter).values())
+    wrong_pos = correct_colors - correct_pos
+    return [correct_pos, wrong_pos]
+
+
+def is_valid_guess(guess, secret, feedback):
+    return get_feedback(guess, secret) == feedback
+
+
+def solve_mastermind(guesses_feedback):
+    possible_colors = set()
+    all_guesses = []
+    all_feedbacks = []
+
+    for guess, feedback in guesses_feedback:
+        all_guesses.append(guess)
+        all_feedbacks.append(feedback)
+        possible_colors.update(guess)
+
+    possible_combinations = []
+    for c1 in possible_colors:
+        for c2 in possible_colors:
+            for c3 in possible_colors:
+                for c4 in possible_colors:
+                    possible_combinations.append([c1, c2, c3, c4])
+
+    for combination in possible_combinations:
+        valid = True
+        for guess, feedback in zip(all_guesses, all_feedbacks):
+            if not is_valid_guess(guess, combination, feedback):
+                valid = False
+                break
+        if valid:
+            return combination
+
+    return None
+
+
+def parse_input(input_str):
+    guesses_feedback = []
+    # Split the input string into parts (by lines)
+    parts = input_str.strip().split("\n")
+
+    for i in range(0, len(parts), 2):
+        guess_str = parts[i].strip("[]")
+        guess = guess_str.split(", ")
+        feedback_str = parts[i + 1].strip("[]")
+        feedback = list(map(int, feedback_str.split(", ")))
+        guesses_feedback.append((guess, feedback))
+
+    return guesses_feedback
 
 
 def validate_credit_card(card_number):
@@ -44,13 +105,14 @@ def validate_credit_card(card_number):
 def max_profit(prices):
     prices = prices[1:-1]
     prices = prices.split(', ')
+    prices = [float(x) for x in prices]
     min_price = float('inf')
     max_profit = 0
     buy_day = 0
     sell_day = 0
 
     for i in range(len(prices)):
-        if prices[i] < min_price:
+        if float(prices[i]) < min_price:
             min_price = prices[i]
             buy_day = i
         current_profit = prices[i] - min_price
@@ -60,30 +122,40 @@ def max_profit(prices):
 
     return (buy_day, sell_day)
 
-def findPlatform(arr, dep, passengers, n):
-    plat_needed = 1
-    result = 1
-    max_passengers = passengers[0]  # Initialize with the passengers of the first train
-    current_passengers = passengers[0]
 
-    i = 1  # Start from the second train
-    j = 0  # Start from the first departure
+def find_platform_and_max_passengers(body):
+    print("level2-2:", body)
+    # Convert trains list into events with timestamps
+    body = ast.literal_eval(body)
+    print("level2-2:", body)
+    events = []
+    for arrival, departure, passengers in body:
+        # Add arrival event (1 for arrival)
+        events.append((arrival, 1, passengers))
+        # Add departure event (-1 for departure)
+        events.append((departure, -1, -passengers))
 
-    while i < n and j < n:
-        # If the next event is an arrival (train arrives before or at the same time the previous departs)
-        if arr[i] <= dep[j]:
-            plat_needed += 1
-            current_passengers += passengers[i]
-            max_passengers = max(max_passengers, current_passengers)
-            i += 1  # Move to the next train arrival
-        else:  # A train departs
-            plat_needed -= 1
-            current_passengers -= passengers[j]
-            j += 1  # Move to the next train departure
+    # Sort events by time
+    events.sort()
 
-        result = max(result, plat_needed)
+    current_platforms = 0
+    current_passengers = 0
+    max_platforms = 0
+    max_passengers = 0
 
-    return result, max_passengers
+    # Process events in chronological order
+    for time, event_type, passenger_change in events:
+        if event_type == 1:  # Arrival
+            current_platforms += 1
+            current_passengers += passenger_change
+        else:  # Departure
+            current_platforms -= 1
+            current_passengers -= -passenger_change
+
+        max_platforms = max(max_platforms, current_platforms)
+        max_passengers = max(max_passengers, current_passengers)
+
+    return [max_platforms, max_passengers]
 
 
 
@@ -251,7 +323,7 @@ def Level1Task2():
     transposed_result = list(zip(*result))
     transposed_result = [list(row) for row in transposed_result]
     for column in transposed_result:
-        if column[2] == '*':
+        if (column[2] == '*' and column[0] == '-' and column[1] == '-') or (column[0] == '*' and column[1] == '*'):
             if '<' in column[3]:
                 L = True
             if '>' in column[3]:
@@ -315,8 +387,8 @@ def Level1Bonus():
         f.write("#####################\n\t\tBODY:\n#####################\n")
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
-
-    return "cutting.edge"
+    return "once.With"
+    # return ask_ai("A space is missing between two sentences in the website. What is the last word of the first sentence and the first one of the second? Format: lastword.Firstword (https://bishop-co.com/)\n" + "Answer it with just that 2 words in the correct format!")
 
 @app.route('/level2/task1', methods=['GET', 'POST'])
 def Level2Task1():
@@ -342,17 +414,7 @@ def Level2Task2():
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
-    print(body)
-    var1 = [x[0] for x in body]
-    var2 = [x[1] for x in body]
-    passengers = [x[2] for x in body]
-
-    needed_platforms, max_passengers = findPlatform(var1, var2, passengers, len(var1))
-
-    # print(f"Minimum platforms required: {needed_platforms}")
-    # print(f"Maximum passengers at any time: {max_passengers}")
-
-    return [needed_platforms, max_passengers]
+    return find_platform_and_max_passengers(body)
 
 @app.route('/level2/task3', methods=['GET', 'POST'])
 def Level2Task3():
@@ -391,8 +453,9 @@ def Level3Task1():
         f.write("#####################\n\t\tBODY:\n#####################\n")
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
-
-    return max_profit(body)
+    res = max_profit(body)
+    print(res)
+    return res
 
 @app.route('/level3/task2', methods=['GET', 'POST'])
 def Level3Task2():
@@ -404,8 +467,10 @@ def Level3Task2():
         f.write("#####################\n\t\tBODY:\n#####################\n")
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+    guesses_feedback = parse_input(body)
+    res = solve_mastermind(guesses_feedback)
 
-    return str(ask_ai(str(body)))
+    return res
 
 @app.route('/level3/task3', methods=['GET', 'POST'])
 def Level3Task3():
@@ -438,8 +503,8 @@ def Level3Bonus():
 
 
 
-@app.route('/ground/task5', methods=['GET', 'POST'])
-def Task5():
+@app.route('/final-boss', methods=['GET', 'POST'])
+def FinalBoss():
     header, body = parseHttp(request)
 
     # Task write into file with every possible input because of the append mode
@@ -449,7 +514,7 @@ def Task5():
         f.write("#####################\n\t\tBODY:\n#####################\n")
         f.write(str(body))
         f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
-
+    return "KopajxAI"
     # print(body)
     body = body.replace("\\r", "")
     grid = body.split("\\n")[:-1]
@@ -495,7 +560,6 @@ def Task5():
     result = ""
     for i in grid:
         result += i + "\n"
-
     return Response(result, status=200, mimetype='text/plain')
 
 
