@@ -1,0 +1,18 @@
+#####################
+		HEADER:
+#####################
+Content-Length: 15
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1o9WCEPpWFC-xC_xc_2NEhnwj6m2Qzb7F/view?usp=share_link
+
+#####################
+		BODY:
+#####################
+34093973129#569
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+

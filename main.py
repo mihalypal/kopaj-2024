@@ -183,7 +183,57 @@ def Level1Task3():
     return res
 
 
+@app.route('/level1/bonus', methods=['GET', 'POST'])
+def Level1Bonus():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level1Bonus.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
 
+    return str(ask_ai(str(body)))
+
+@app.route('/level2/task1', methods=['GET', 'POST'])
+def Level2Task1():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level2Task1.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+
+    return str(ask_ai(str(body)))
+
+@app.route('/level2/task2', methods=['GET', 'POST'])
+def Level2Task2():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level2Task2.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+
+    return str(ask_ai(str(body)))
+
+@app.route('/level2/task3', methods=['GET', 'POST'])
+def Level2Task3():
+    header, body = parseHttp(request)
+    # Task write into file with every possible input because of the append mode
+    with open("Tasks/Level2Task3.txt", "a") as f:
+        f.write("#####################\n\t\tHEADER:\n#####################\n")
+        f.write(str(header))
+        f.write("#####################\n\t\tBODY:\n#####################\n")
+        f.write(str(body))
+        f.write("\n\n******************************************\n************* N E W  T A S K *************\n******************************************\n\n")
+
+    return str(ask_ai(str(body)))
 
 
 

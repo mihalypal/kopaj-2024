@@ -1,0 +1,18 @@
+#####################
+		HEADER:
+#####################
+Content-Length: 122
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/1Ip4Qf9x5sn-qWq6ZgaSfjnrExExhl7OB/view?usp=drive_link
+
+#####################
+		BODY:
+#####################
+Where did the compass lead Mara?\na) To an ancient ruin\nb) To a mountain peak\nc) To a treasure chest\nd) To a magical forest
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+

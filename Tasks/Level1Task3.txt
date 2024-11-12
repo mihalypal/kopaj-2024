@@ -736,3 +736,273 @@ What kind of bird was Sky? a) A parrot b) A sparrow c) A blue bird d) A dove
 ************* N E W  T A S K *************
 ******************************************
 
+#####################
+		HEADER:
+#####################
+Content-Length: 128
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did Eliza do when she first saw the bird? a) She ignored it b) She whistled to it c) She fed it bread d) She chased it away
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 90
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+How did Eliza feel about the traveler\xe2\x80\x99s words? a) Curious b) Angry c) Confused d) Afraid
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 128
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did Eliza do when she first saw the bird? a) She ignored it b) She whistled to it c) She fed it bread d) She chased it away
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 129
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+Where did the traveler hear about Sky? a) From Eliza\xe2\x80\x99s neighbors b) In a nearby town c) From a friend d) From the village elder
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 83
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did Eliza grow in her garden? a) Vegetables b) Flowers c) Herbs d) Fruit trees
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 89
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did Sky do at sunset? a) Flew away b) Sat beside Eliza c) Sang a song d) Disappeared
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 146
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+How did Eliza's neighbors react to her garden after Sky\xe2\x80\x99s arrival? a) They were envious b) They admired it c) They ignored it d) They complained
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 124
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What began to bloom more beautifully after Sky arrived? a) Trees b) Her vegetables c) Eliza\xe2\x80\x99s garden d) The village square
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 70
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What name did Eliza give to the bird? a) Sunny b) Blue c) Sky d) Cloud
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 124
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What began to bloom more beautifully after Sky arrived? a) Trees b) Her vegetables c) Eliza\xe2\x80\x99s garden d) The village square
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 146
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+How did Eliza's neighbors react to her garden after Sky\xe2\x80\x99s arrival? a) They were envious b) They admired it c) They ignored it d) They complained
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 110
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+What did the traveler have? a) A long gray beard b) A walking stick c) A basket of fruits d) A small blue bird
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 83
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+Where did Eliza live? a) In a big city b) In a cottage c) In a mansion d) In a tent
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 90
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+How did Eliza feel about the traveler\xe2\x80\x99s words? a) Curious b) Angry c) Confused d) Afraid
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
+#####################
+		HEADER:
+#####################
+Content-Length: 107
+Host: 10.33.1.61:1234
+User-Agent: Java-http-client/17.0.9
+Content-Type: text/plain
+Task-Description: https://drive.google.com/file/d/12AG4Z5Kwbdu2eftINwkICDfMulj6C0Qj/view?usp=sharing
+
+#####################
+		BODY:
+#####################
+How did Eliza feel when she saw the small bird on her fence? a) Scared b) Angry c) Delighted d) Indifferent
+
+******************************************
+************* N E W  T A S K *************
+******************************************
+
