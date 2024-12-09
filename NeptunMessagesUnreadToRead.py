@@ -112,7 +112,7 @@ def main(username: str = '', password: str = ''):
 # main()
 
 import tkinter as tk
-from tkinter import simpledialog
+from tkinter import CENTER
 
 def get_user_data():
     def on_submit():
@@ -123,18 +123,40 @@ def get_user_data():
         if res == 0:
             return
 
+    def on_enter(event):
+        on_submit()
+    
     root = tk.Tk()
     root.title("Login")
+    root.geometry("300x150+300+120")
+    
+    root.resizable(False, False)
+    root.attributes("-alpha", 0.6)
 
-    tk.Label(root, text="Username:").grid(row=0, column=0)
+    # Configure rows and columns for centering
+    root.grid_rowconfigure(0, weight=1)
+    root.grid_rowconfigure(1, weight=0)  # Sor közti távolság csökkentése
+    root.grid_rowconfigure(2, weight=0)
+    root.grid_rowconfigure(3, weight=0)
+    root.grid_rowconfigure(4, weight=1)  # Gomb alatti hely
+    root.grid_columnconfigure(0, weight=1)
+    root.grid_columnconfigure(1, weight=1)
+
+    # Username label and entry
+    tk.Label(root, text="Username:").grid(row=1, column=0, sticky="e", padx=5, pady=2)
     entry_username = tk.Entry(root)
-    entry_username.grid(row=0, column=1)
+    entry_username.grid(row=1, column=1, sticky="w", padx=5, pady=2)
 
-    tk.Label(root, text="Password:").grid(row=1, column=0)
+    # Password label and entry
+    tk.Label(root, text="Password:").grid(row=2, column=0, sticky="e", padx=5, pady=2)
     entry_password = tk.Entry(root, show="*")
-    entry_password.grid(row=1, column=1)
+    entry_password.grid(row=2, column=1, sticky="w", padx=5, pady=2)
 
-    tk.Button(root, text="Submit", command=on_submit).grid(row=2, columnspan=2)
+    # Bind Enter key to password field
+    entry_password.bind("<Return>", on_enter)
+
+    # Submit button
+    tk.Button(root, text="Submit", command=on_submit).grid(row=3, column=0, columnspan=2, pady=5)
 
     root.mainloop()
 
